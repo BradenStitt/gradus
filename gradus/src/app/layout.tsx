@@ -30,7 +30,7 @@ export default function RootLayout({
             inter.className
           )}
         >
-          <Toaster />;
+          <Toaster />
           <Navbar />
           {children}
         </body>
