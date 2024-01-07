@@ -80,4 +80,6 @@ const Message = forwardRef<HTMLDivElement, MessageProps>(
   }
 );
 
+Message.displayName = "Message"; // Necessary to add display name for React DevTools to work https://reactjs.org/docs/forwarding-refs.html#displaying-a-custom-name-in-devtools
+
 export default Message;

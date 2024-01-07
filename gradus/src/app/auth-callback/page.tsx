@@ -7,7 +7,7 @@ import { Loader2 } from "lucide-react";
 npm i @trpc/server @trpc/client @trpc/react-query @trpc/next @tanstack/react-query@^4.18.0  zod
 And this would be updated in tRPC v11.
 */
-function page() {
+function Page() {
   const router = useRouter(); // Get the router object from Next.js
 
   const searchParams = useSearchParams(); // Get the search params from Next.js
@@ -41,4 +41,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
