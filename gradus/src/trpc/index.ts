@@ -15,7 +15,7 @@ export const appRouter = router({
     const user = await getUser();
 
     // Gaurd Clause to make sure the user is logged in
-    if (!user || !user.email) {
+    if (!user?.id || !user.email) {
       throw new TRPCError({ code: "UNAUTHORIZED" });
     }
 
