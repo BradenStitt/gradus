@@ -1,5 +1,4 @@
 "use client";
-import { getUserSubscriptionPlan } from "@/lib/stripe";
 import React from "react";
 import { useToast } from "./ui/use-toast";
 import { trpc } from "@/app/_trpc/client";
@@ -14,6 +13,7 @@ import {
 import { Button } from "./ui/button";
 import { Loader2 } from "lucide-react";
 import { format } from "date-fns";
+import { getUserSubscriptionPlan } from "@/lib/stripe";
 
 interface BillingFormProps {
   subscriptionPlan: Awaited<ReturnType<typeof getUserSubscriptionPlan>>;

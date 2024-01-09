@@ -5,9 +5,9 @@ import { db } from "@/db";
 import { z } from "zod";
 import { INFINITE_QUERY_LIMIT } from "@/config/infinite-query";
 import { absoluteUrl } from "@/lib/utils";
-import { getUserSubscriptionPlan, stripe } from "@/lib/stripe";
 import { sub } from "date-fns";
 import { PLANS } from "@/config/stripe";
+import { getUserSubscriptionPlan } from "@/lib/stripe";
 
 export const appRouter = router({
   authCallback: publicProcedure.query(async () => {
